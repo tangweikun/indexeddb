@@ -1,23 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { AddTodoList } from "./client/AddTodoList";
+import { ResetDatabaseButton } from "./client/ResetDatabaseButton";
+import { TodoLists } from "./client/TodoLists";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          2 <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TodoLists />
+      <AddTodoList />
+      <ResetDatabaseButton />
     </div>
   );
 }
