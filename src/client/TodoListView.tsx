@@ -17,9 +17,9 @@ export function TodoListView({ todoList }: Props) {
   if (!items) return null;
 
   return (
-    <div className="box">
-      <div className="grid-row">
-        <h2>{todoList.title}</h2>
+    <div>
+      <div className="flex">
+        <h2 className="mr-8">{todoList.title}</h2>
         <div className="todo-list-trash">
           <a onClick={() => db.deleteList(todoList.id)} title="Delete list">
             删除
